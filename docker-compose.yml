@@ -1,0 +1,10 @@
+version: '3.7'
+
+services: 
+    web: 
+        build: ./mlflow
+        image: mlflow_model_server
+        container_name: mlflow_model_server
+        ports:
+            - 5553:1234
+        
